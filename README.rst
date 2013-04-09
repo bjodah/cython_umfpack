@@ -21,7 +21,7 @@ note: make sure clang and llvm is on PATH, e.g.:
 
 ::
 
-  env PATH=$PATH:/opt/llvm python setup.py build_ext --inplace
+  env LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/llvm/lib/ python setup.py build_ext --inplace
 
 To compile the pure ANSI C example (from UMFPACK's user's guide)
 ``gcc original_example.c -o original_example -lumfpack``
