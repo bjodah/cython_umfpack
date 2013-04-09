@@ -36,6 +36,24 @@ note: make sure clang and llvm is on PATH, e.g.:
 To compile the pure ANSI C example (from UMFPACK's user's guide)
 ``gcc original_example.c -o original_example -lumfpack``
 
+When the extension module is compiled, cd into cython_umfpack and run
+
+::
+
+  python cython_example_main.py
+
+It should output:
+
+::
+
+  x[0] = 1.0
+  x[1] = 2.0
+  x[2] = 3.0
+  x[3] = 4.0
+  x[4] = 5.0
+
+(same as the compiled version of original_example.c)
+
 cython_exapmle.pyx
 ==================
 A more or less literate transcription of the small original_example.c program.
