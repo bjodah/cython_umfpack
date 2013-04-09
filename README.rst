@@ -47,5 +47,5 @@ If you can't get cwrap to work, the generated pxd files for UMFPACK 5.4 is provi
 
 LICENSE
 =======
-Open Soucrce. Released under the very permissive "simplified (2-clause) BSD license". See LICENCE.tx for further details.
+Open Soucrce. Released under the very permissive "simplified (2-clause) BSD license". See LICENCE.txt for further details.
 

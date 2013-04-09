@@ -4,6 +4,10 @@ build/
 pxd_enum_out/*
 cwrap_out/*
 *.pyc
+#*#
+.#*
 cython_umfpack/*.pyc
 cython_umfpack/*.so
+cython_umfpack/#*#
+cython_umfpack/.#*
 cython_umfpack/cython_example.c

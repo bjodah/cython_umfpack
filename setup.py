@@ -28,6 +28,8 @@ def generate_pxd():
     # Run cwrap (output in CWRAP_OUT)
     # if not LLVM_BIN_PATH in sys.path:
     #     sys.path.append(LLVM_BIN_PATH)
+    if not os.path.exists(CWRAP_OUT):
+        os.mkdirs(CWRAP_OUT)
     umfpack_headers = glob.glob(os.path.join(
         SUITESPARSE_INC, 'umfpack*'))
     cwrap_header_files = list(map(File, umfpack_headers))
@@ -39,6 +41,8 @@ def generate_pxd():
 
     # Extract #define style enums (output to PXD_ENUM_OUT)
     import c_defines_to_pxd_enum
+    if not os.path.exists(PXD_ENUM_OUT):
+        os.mkdirs(PXD_ENUM_OUT)
     c_defines_to_pxd_enum.main(umfpack_headers, PXD_ENUM_OUT)
 
     # Join resp. pxd files in cython_umfpack/
