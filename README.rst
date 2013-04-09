@@ -4,7 +4,7 @@ Cython umfpack (pre-alpha release) Demo
 
 Experimental cython interface to umfpack. Uses [cwrap](https://github.com/geggo/cwrap) and a
 provided utility script to generate relevant .pxd files. Currently it may be seen as a demo
- and proof of concept of the excellent cwrap tool.
+and proof of concept of the excellent cwrap tool.
 
 It currently compiles a small example program provided.
 
@@ -13,17 +13,18 @@ Usage
 
 Compiling
 
-```
+::
+
 python setup.py build_ext --inplace
-```
+
 note: make sure clang and llvm is on PATH, e.g.:
 
-```
+::
+
 env PATH=$PATH:/opt/llvm python setup.py build_ext --inplace
-```
 
 To compile the pure ANSI C example (from UMFPACK's user's guide)
-```gcc original_example.c -o original_example -lumfpack```
+``gcc original_example.c -o original_example -lumfpack``
 
 cython_exapmle.pyx
 ==================
