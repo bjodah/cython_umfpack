@@ -12,9 +12,11 @@ Prerequisities
 ==============
 - Cython_
 - cwrap_
+- UMFPACK_
 
 .. _Cython: http://www.cython.org
 .. _cwrap: https://github.com/geggo/cwrap
+.. _UMFPACK: http://www.cise.ufl.edu/research/sparse/umfpack/
 
 Usage
 =====
