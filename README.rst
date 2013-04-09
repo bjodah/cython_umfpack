@@ -8,6 +8,11 @@ and proof of concept of the excellent cwrap tool.
 
 It currently compiles a small example program provided.
 
+Prerequisities
+==============
+- [Cython](http://www.cython.org)
+- [cwrap](https://github.com/geggo/cwrap)
+
 Usage
 =====
 
