@@ -10,8 +10,11 @@ It currently compiles a small example program provided.
 
 Prerequisities
 ==============
-- [Cython](http://www.cython.org)
-- [cwrap](https://github.com/geggo/cwrap)
+- Cython_
+- cwrap_
+
+.. _Cython: http://www.cython.org
+.. _cwrap: https://github.com/geggo/cwrap
 
 Usage
 =====
